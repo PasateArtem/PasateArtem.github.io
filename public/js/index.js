@@ -29,8 +29,8 @@ requirejs([
       settings: {
         slidesToShow: 1,
         infinite: true,
-        dots: true,
-        autoplay: true
+        autoplay: true,
+        dots: true
       }
     },
     {

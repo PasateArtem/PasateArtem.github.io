@@ -22,12 +22,14 @@ requirejs([
         prevArrow:$('.prev'),
         nextArrow:$ ('.next'),
         slidesToShow: 1,
+        autoplay: true,
         responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 1,
         infinite: true,
+        autoplay: true,
         dots: true
       }
     },
