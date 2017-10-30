@@ -1,0 +1,12 @@
+.section-features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0px;   
+}
+
+@media screen and (max-width: 470px){
+	.section-features {
+		padding: 0px 0px 30px;
+	}
+}

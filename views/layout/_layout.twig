@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	{% block head %}
+	<link rel="stylesheet" href="css/style.css">
+    {% endblock %}
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<script src="js/require.js" data-main="js/index"></script>
+	<title>{% block title %}Wapik{% endblock %}</title>
+</head>
+<body>
+	<div class="wrapper">
+		{% block main %}
+		<div class="section section-main">
+		    <div class="header-about">
+	            <div class="container">
+		            <div class="list list-card-header">
+		                <div class="list-item">
+		                    {% block cardheader %}
+		                    <div class="card-header">
+		                        <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+			                    <div class="contact"><i class="fa fa-phone" aria-hidden="true"></i><p>+62 202 555 0117</p></div>
+		                    </div>
+		                    {% endblock %}   
+		                </div>
+		                <div class="list-item">
+		                    {% block cardmenu %}
+		                    <div class="card-menu">
+		                        <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" >
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+			                    <div class="header-menu">
+				                    <ul class="header-list">
+					                    <li class="nav-item"><a class="is-active light" href="../index.html">HOME</a></li>
+					                    <li class="nav-item"><a class="light" href="../aboutus.html">ABOUT US</a></li>
+		                                <li class="nav-item"><a class="light" href="../pricing.html">PRICING</a></li>
+				                        <li class="nav-item"><a class="light" href="./contact.html">CONTACT US</a></li>
+					                    <li class="nav-item"><a class="is-active-link light" href="#">GET STARTED</a></li>
+				                    </ul>
+			                    </div>
+		                    </div>
+		                    {% endblock %}   
+		                </div>
+	                </div>
+                </div>
+            </div>
+            {% block mainabout %}    
+            <div class="main-about">
+	            <div class="container">
+	                {% block cardabout %}
+	                <div class="card-main">
+	                    <h1 class="main-title">Welcome to Wapik</h1>
+			            <p class="main-description">Wapik is multipurpose template, with modern and smart design. Wapik<br> is perfect template for you!</p>
+			            <div class="form-group-actions">
+		    	            <button class="button button-learn">LEARN MORE</button>
+		                </div>
+	                </div>
+	                {% endblock %}   
+	            </div>
+            </div>
+            {% endblock %}
+        </div>
+        {% endblock %}  
+        <div id="content">  
+        	{% block content %}
+		    <div class="section section-features">
+			    <div class="container">
+			    	<div class="features-about">
+				        <h2 class="primary-title">Best of our features</h2>
+				        <p class="primary-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                        Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        <div class="list list-card-features">
+                	        <div class="list-item">
+                	        	{% block cardconponents %}
+                		        <div class="list list-card-components">
+                			        {% for item in CardComponents %}
+                			        <div class="list-item">
+                				        <div class="card card-components">
+                					        <div class="card-icon"><img src="img/{{item.iconUrl}}" alt=""></div>
+                					        <div class="card-title"><strong> {{item.strong}} </strong></div>
+                					        <div class="card-description"><p> {{item.p}} </p></div>
+                				        </div>	
+                			        </div>
+                			        {% endfor %}
+                		        </div>
+                		       {% endblock %}
+                	        </div>
+                	        <div class="border-midle"><img src="img/border.png" alt=""></div>
+                	        <div class="list-item">
+                		        <div class="list list-card-advantage">
+                			        {% for item in CardAdvantage %}
+                			        <div class="list-item">
+                				        <div class="card card-advantage-top">
+                					        <div class="card-icon"><img src="img/{{item.iconUrl}}" alt=""></div>
+                					        <div class="card-title"><strong>{{item.strong}}</strong></div>
+                				        </div>
+                				        <div class="card card-advantage-bottom">
+                					        <div class="card-description"><p>{{item.p}}</p></div>
+                				        </div>
+                			        </div>
+                			        {% endfor %}
+                		        </div> 		
+                	        </div>
+                        </div>
+			        </div>
+			    </div>
+		    </div>
+		    {% include './modules/_section-example.twig' %}
+		    {% include './modules/_section-feedback.twig' %}
+		    {% include './modules/_section-built.twig' %}
+		    <div class="section section-pricing">
+		    	<div class="container">
+		    		<div class="pricing-about">
+		    			<h2 class="primary-title">Pricing & Plan</h2>
+				        <p class="primary-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.<br>Donec id elit non mi porta gravida at eget metus.</p>
+				        {% block cardpricing %}
+				        <div class="list list-card-pricing">
+				        	{% for item in PlanPrice %}
+				            <div class="list-item ">
+				            	<div class="card card-price">
+				            		<div class="card-title"><strong>{{item.strong}}</strong></div>
+				            		<div class="card-numeral"><h1>{{item.h1}}</h1><span>{{item.span}}</span></div>
+                                    <div class="card-description"><p>{{item.p}}</p></div>
+                                    <div class="form-group-actions">
+		    	                        <button class="button button-select active-select"><a href="#">{{item.a}}</a></button>
+		                            </div>
+				            	</div>
+				            </div>
+				            {% endfor %}
+				        </div>
+				        {% endblock %}
+				        {% block cardinstrument%}
+				        <div class="list list-card-instrument">
+				        	<h3 class="primary-title-small">Included with all Plans</h3>
+				        	<div class="card-instrument">
+				        		<ul class="list-description">
+				        			{% for item in InstrumentList %}
+				        			<li class="list-item"><i class="fa fa-check" aria-hidden="true"></i><p>{{item.p}}</p></li>
+				        			{% endfor %}
+				        		</ul>
+				        	</div>
+				        </div>
+				        {% endblock %}
+				        {% block cardsupport %}
+				        <div class="list list-card-support">
+				        	<div class="card card-support">
+				        		<div class="card-icon"><img src="img/round.png" alt=""></div>
+				        		<h2 class="primary-title-big">Need Help?</h2>
+				        		<p class="primary-description">Contact our Customer Support that is always ready to help you with any possible<br>questions, problems or information</p>
+				        		<div class="card-email"><p>support@wapik.com</p></div>
+				        	</div>
+				        </div>
+				        {% endblock %}
+		    		</div>
+		    	</div>
+		    </div>
+		    {% endblock %}
+		</div>
+		<div class="footer">
+		    {% block prefoter %}
+			<div class="prefooter">
+				<div class="container">
+					<div class="list list-card-banner">
+					    <div class="list-item">
+						    <div class="card-title"><h2>Do You Like Wapik? Download it Now</h2></div>
+						    <div class="card-description"><p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></div>
+					    </div>
+					    <div class="list-item">
+						    <div class="form-group-actions">
+		    	                <button class="button button-download"><a href="#">DOWNLOAD NOW! - FREE FOREVER</a></button>
+		                    </div>
+					    </div>
+				    </div>
+			    </div>
+			</div>
+		    {% endblock %}
+			<div class="container">
+				<div class="list-footer-whole">
+				    <div class="list-item footer-whole-logos">
+					    <div class="logo dark-logo"><a href="#"><img src="img/dark-logo.png" alt=""></a></div>
+					    <div class="card-email"><p>@:</p><span>hi@wapik.com</span></div>
+					    <div class="card-phone"><p>p: +62 202 555 0117</p></div>
+					    <div class="card-adres"><p>a: 610 Overlook Circle Suite 323<br>Kalamazoo, MI 49009</p></div>
+				    </div>
+				    <div class="list-item">
+					    <div class="card-heading"><strong>Company</strong></div>
+					    <ul>
+						    <li><a href="#">Home</a></li>
+						    <li><a href="#">About Us</a></li>
+						    <li><a href="#">Pricing</a></li>
+						    <li><a href="#">Contact Us</a></li>
+					    </ul>
+				    </div>
+				    <div class="list-item">
+					    <div class="card-heading"><strong>Others</strong></div>
+					    <ul>
+						    <li><a href="#">Help & Support</a></li>
+						    <li><a href="#">Privacy Policy</a></li>
+						    <li><a href="#">Terms</a></li>
+						    <li><a href="#">Sitemap</a></li>
+					    </ul>
+				    </div>
+				    <div class="list-item">
+					    <div class="card-heading"><strong>Newsletter</strong></div>
+					    <div class="card-description"><p>Subscribe to our newsletter and get all<br>the cool news</p></div>
+					    <div class="form-group-input">
+					    	<input type="text" placeholder="Enter Email" class="form-control ">
+					    	<button><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+					    </div>
+				    </div>
+			    </div>
+			    <div class="list list-card-footer">
+				    <div class="list-item">
+				    	<div class="footer-inner"><p>All rights reserved 2015.</p></div>
+				    </div>
+				    <div class="list-item">
+				    	<ul class="list-links">
+				    		<li class="list-item"><a class="bg-twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				    		<li class="list-item"><a class="bg-facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				    		<li class="list-item"><a class="bg-instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				    		<li class="list-item"><a class="bg-dribbble" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				    		<li class="list-item"><a class="bg-github-alt" href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+				    	</ul>
+				    </div>
+			    </div>
+			</div>
+		</div> 	
+	</div>	
+</body>
+</html>

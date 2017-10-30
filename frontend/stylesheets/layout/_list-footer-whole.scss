@@ -1,0 +1,162 @@
+.list-footer-whole{
+	display: flex;
+    justify-content: space-between;
+    padding: 35px 0px;
+    flex-flow: row wrap;
+    .dark-logo{
+    	padding-bottom: 12px;
+    	a{
+    		img{
+    			width: 62px;
+    		}
+    	}
+    }
+    .card-email{
+    	display: flex;
+    	align-items: center;
+    	padding: 5px 0px;
+    	p{
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+    		margin: 0;
+    	}
+    	span{
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #0f5f5c;
+    	}
+    }
+    .card-phone,
+    .card-adres{
+    	padding: 5px 0px;
+    	p{
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+    		margin: 0;
+
+    	}
+    }
+    .card-heading{
+    	strong{
+    		font-family: 'Conv_Roboto-Medium';
+    		font-size: 13px;
+    		color: #0f5f5c;
+    	}
+    }
+    ul{
+    	padding: 0px;
+    	li{
+            padding-bottom: 6px;
+    		a{
+                font-family: 'Conv_Roboto-Regular';
+    		    font-size: 13px;
+    		    color: #83a7a5;
+    		}
+    	}
+    }
+    .card-description{
+    	p{
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+    		line-height: 24px;
+    	}
+    }
+    .form-group-input{
+    	.form-control{
+    		padding: 5px 26px 5px 10px;
+            border: 1px solid transparent;
+            background: #eef1ec;
+            border-radius: 3px;
+            font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+    		outline: none;
+    		width: 85%;
+    	}
+    	.form-control:hover{
+            border: 1px solid #6fb048;
+    	}
+    	button{
+    		position: relative;
+            left: 199px;
+            top: -22px;
+            border: none;
+            background: inherit;
+            color: #6fb048;
+            outline: none;
+            cursor: pointer;
+    	}
+    	input::-webkit-input-placeholder{
+    		opacity: 1;
+    		transition: opacity 0.3s ease;
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+    	}
+        input::-moz-input-placeholder{
+        	opacity: 1;
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+        }
+        input:-moz-input-placeholder{
+        	opacity: 1; 
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+        }
+        input:-ms-input-placeholder{
+        	opacity: 1; 
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 13px;
+    		color: #83a7a5;
+        }
+        input:focus::-webkit-input-placeholder {
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        input:focus::-moz-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        input:focus:-moz-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        input:focus:-ms-input-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .list-footer-whole{
+        justify-content: space-around;
+        .list-item{
+            width: 50%;
+        }
+        .form-group-input{
+            .form-control{
+                width: 64%;
+            }
+            button{
+                left: -33px;
+                top: 0px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 470px){
+    .list-footer-whole{
+        .list-item{
+            width: 100%;
+        }
+    }
+}

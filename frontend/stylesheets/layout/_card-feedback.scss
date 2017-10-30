@@ -1,0 +1,50 @@
+.card-feedback{
+	display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    .card-description{
+    	p{
+    		font-family: 'Conv_Merriweather-Light';
+    		font-size: 22px;
+    		color: #83a7a5;
+    		line-height: 46px;
+    	}
+    	.card-name{
+    		font-family: 'Conv_Roboto-Medium';
+    		font-size: 14px;
+    		color: #6fb048;
+    		line-height: 14px;
+    	}
+    	.card-title{
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+    		line-height: 14px;
+    	}
+    }
+    .card-images{
+        padding: 5px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 974px){
+    .card-feedback{
+        flex-direction: column-reverse;
+    } 
+}
+
+@media screen and (max-width: 470px){
+    .card-feedback{
+        .card-description{
+            p{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}

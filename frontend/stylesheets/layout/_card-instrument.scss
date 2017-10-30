@@ -1,0 +1,42 @@
+.card-instrument{
+	.list-description {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        .list-item{
+		    display: flex;
+		    align-items: center;
+		    width: 301px;
+		    i{
+			    padding: 5px;
+                background: inherit;
+                border-radius: 50%;
+                border: 1px solid #83a7a5;
+                color: #83a7a5;
+		    }
+		    p{
+		        margin-left: 10px;
+		        font-family: 'Conv_Roboto-Regular';
+                font-size: 15px;
+                color: #83a7a5;
+                line-height: 24px;
+		    }
+		}
+    }
+}
+
+
+@media screen and (max-width: 470px){
+	.card-instrument{
+		.list-description{
+			padding: 0;
+			margin: 0;
+			.list-item{
+				p{
+					font-size: 13px;
+					line-height: 17px;
+				}
+			}
+		}
+	}
+}

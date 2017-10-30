@@ -1,0 +1,98 @@
+{% extends '../layout/_layout.twig' %}
+
+
+{% block main %}
+		<div class="section section-main main-light">
+		    <div class="header-about">
+	            <div class="container">
+		            <div class="list list-card-header">
+		                <div class="list-item">
+		                    {% block cardheader %}
+                            <div class="card-header">
+		                        <div class="logo dark-logo"><a href="#"><img src="img/dark-logo.png" alt=""></a></div>
+	                            <div class="contact contact-dark"><i class="fa fa-phone" aria-hidden="true"></i><p>+62 202 555 0117</p></div>
+                            </div>
+                            {% endblock %}   
+		                </div>
+		                <div class="list-item">
+		                    {% block cardmenu %}
+                            <div class="card-menu">
+		                        <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" >
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+	                            <div class="header-menu">
+		                            <ul class="header-list header-list-dark">
+		                                <li class="nav-item"><a class="is-active light" href="../index.html">HOME</a></li>
+			                            <li class="nav-item"><a class="light" href="#">ABOUT US</a></li>
+		                                <li class="nav-item"><a class="light" href="../pricing.html">PRICING</a></li>
+		                                <li class="nav-item"><a class="light" href="#">CONTACT US</a></li>
+			                            <li class="nav-item"><a class="light" href="#">GET STARTED</a></li>
+		                            </ul>
+		                        </div>
+                            </div>
+                            {% endblock %}   
+		                </div>
+	                </div>
+                </div>
+            </div>    
+            <div class="main-about">
+	            <div class="container">
+	                {% block cardabout %}
+	                <div class="card-main card-main-pricing">
+	                    <h1 class="main-title">Get Started with Wapik Today<br>All Plans include a 30-Day Trial Period</h1>
+			            <p class="main-description">Cras mattis consectetur purus sit amet fermentum.</p>
+                        {% block cardpricing %}
+				        <div class="list list-card-pricing list-card-pricing-light">
+				        	{% for item in PlanPrice %}
+				            <div class="list-item ">
+				            	<div class="card card-price">
+				            		<div class="card-title"><strong>{{item.strong}}</strong></div>
+				            		<div class="card-numeral"><h1>{{item.h1}}</h1><span>{{item.span}}</span></div>
+                                    <div class="card-description"><p>{{item.p}}</p></div>
+                                    <div class="form-group-actions">
+		    	                        <button class="button button-select active-select"><a href="#">{{item.a}}</a></button>
+		                            </div>
+				            	</div>
+				            </div>
+				            {% endfor %}
+				        </div>
+				        {% endblock %}
+				        <div class="card-time"><p>Limited Time Offer. All plans are FREE 14 days!</p></div>
+	                </div>
+	                {% endblock %}   
+	            </div>
+            </div>
+        </div>
+        {% endblock %}  
+{% block content %}
+	<div class="section section-pricing">
+		<div class="container">
+		    <div class="pricing-about">
+		    	{% block cardinstrument%}
+				<div class="list list-card-instrument">
+				    <h3 class="primary-title">Included with all Plans</h3>
+				    <div class="card-instrument">
+				        <ul class="list-description">
+				        	{% for item in InstrumentList %}
+				        	<li class="list-item"><i class="fa fa-check" aria-hidden="true"></i><p>{{item.p}}</p></li>
+				        	{% endfor %}
+				        </ul>
+				    </div>
+				</div>
+				{% endblock %}
+				{% block cardsupport %}
+				<div class="list list-card-support">
+				    <div class="card card-support">
+				        <div class="card-icon"><img src="img/round.png" alt=""></div>
+				        <h2 class="primary-title-big">Need Help?</h2>
+				        <p class="primary-description">Contact our Customer Support that is always ready to help you with any possible<br>questions, problems or information</p>
+				        <div class="card-email"><p>support@wapik.com</p></div>
+				    </div>
+				</div>
+				{% endblock %}		
+		    </div>
+		</div>
+    </div>
+{% endblock %}

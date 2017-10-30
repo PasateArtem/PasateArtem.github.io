@@ -1,0 +1,114 @@
+{% extends '../layout/_layout.twig' %}
+
+{% block main %}
+<div class="section section-main main-images-bg">
+    <div class="header-about">
+	    <div class="container">
+		    <div class="list list-card-header">
+		        <div class="list-item">
+		            {% block cardheader %}
+		            <div class="card-header">
+		                <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+			            <div class="contact"><i class="fa fa-phone" aria-hidden="true"></i><p>+62 202 555 0117</p></div>
+		            </div>
+		            {% endblock %}   
+		        </div>
+		        <div class="list-item">
+		            {% block cardmenu %}
+		            <div class="card-menu">
+		                <button class="hamburger hamburger--collapse" type="button" aria-label="Menu" >
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+			                <div class="header-menu">
+				                <ul class="header-list">
+					                <li class="nav-item"><a class="is-active light" href="../index.html">HOME</a></li>
+					                <li class="nav-item"><a class="light" href="../aboutus.html">ABOUT US</a></li>
+		                            <li class="nav-item"><a class="light" href="../pricing.html">PRICING</a></li>
+				                    <li class="nav-item"><a class="light" href="#">CONTACT US</a></li>
+					                <li class="nav-item"><a class="light" href="#">GET STARTED</a></li>
+				                </ul>
+			                </div>
+		            </div>
+		            {% endblock %}   
+		        </div>
+	        </div>
+        </div>
+    </div>
+    {% block mainabout %}    
+    <div class="main-about">
+	    <div class="container">
+	        {% block cardabout %}
+	        <div class="card-main">
+	            <h1 class="main-title">Cras justo odio, dapibus ac facilisis in<br>egestas eget quam</h1>
+			    <div class="form-group-actions">
+		    	    <button class="button button-learn button-free">START YOUR FREE TRIAL</button>
+		        </div>
+	        </div>
+	        {% endblock %}   
+	    </div>
+    </div>
+    {% endblock %}
+</div>
+{% endblock %} 
+
+{% block content %}
+    <div class="section section-aboutus">
+    	<div class="container">
+    		<div class="aboutus-about">
+    			<h2 class="primary-title">About Us</h2>
+				<p class="primary-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit<br> non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris<br> condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut<br> id elit. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor </p>
+				{% block cardconponents %}
+                    <div class="list list-card-components">
+                		{% for item in CardComponents %}
+                	    <div class="list-item">
+                	        <div class="card card-components">
+                			    <div class="card-icon"><img src="img/{{item.iconUrl}}" alt=""></div>
+                			    <div class="card-title"><strong> {{item.strong}} </strong></div>
+                			    <div class="card-description"><p> {{item.p}} </p></div>
+                		    </div>	
+                	    </div>
+                        {% endfor %}
+                    </div>
+                {% endblock %}
+    		</div>
+    	</div>
+    </div>
+    <div class="section section-team">
+	    <div class="container">
+		    <div class="team-about">
+		    	<h2 class="primary-title">Meet Our Team</h2>
+				<p class="primary-description">Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget<br> lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur<br> ridiculus mus.</p>
+			    <div class="list list-card-team">
+				    {% for item in CardTeam %}
+				    <div class="list-item">
+					    <div class="card card-team">
+						    <div class="card-images"><img src="img/{{item.imgUrl}}" alt=""></div>
+						    <div class="card-name"><strong>{{item.strong}}</strong></div>
+						    <div class="card-title"><p>{{item.p}}</p></div>
+					    </div>
+				    </div>
+				   {% endfor %}
+			    </div>
+		    </div>
+	    </div>
+    </div>
+{% endblock %}
+{% block prefoter %}
+			<div class="prefooter prefooter-green">
+				<div class="container">
+					<div class="list list-card-banner list-card-banner-green">
+					    <div class="list-item">
+						    <div class="card-title"><h2>Do You Like Wapik? Download it Now</h2></div>
+						    <div class="card-description"><p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p></div>
+					    </div>
+					    <div class="list-item">
+						    <div class="form-group-actions">
+		    	                <button class="button button-download"><a href="#">DOWNLOAD NOW! - FREE FOREVER</a></button>
+		                    </div>
+					    </div>
+				    </div>
+			    </div>
+			</div>
+		    {% endblock %}

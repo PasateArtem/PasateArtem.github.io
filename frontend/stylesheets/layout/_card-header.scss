@@ -1,0 +1,42 @@
+.card-header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+	display: flex;
+    align-items: center;
+    margin-left: 15px;
+    i{
+    	color: #bdc7c7;
+    	padding: 0px 5px 0px 15px;
+    }
+    p{
+    	font-size: 13px;
+    	font-family: 'Conv_Montserrat-Regular';
+    	color: #bdc7c7;
+    }
+}
+.contact::before{
+	content: '';
+	height: 20px;
+	width: 1px;
+	background: #385656;
+	display: block;
+}
+.contact-dark{
+	i{
+		color: #a3bdba;
+	}
+	p{
+		color: #83a7a5;
+	}
+}
+@media screen and (max-width: 320px){
+    .contact{
+        margin-left: 10px;
+        i{
+    	    padding: 0px 5px 0px 5px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "prechu",
+  "version": "1.0.0",
+  "description": "new",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pasateartem"
+  },
+  "keywords": [
+    "203011lena"
+  ],
+  "author": "Artem",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.10",
+    "browser-sync": "^2.18.13",
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-data": "^1.2.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-logger": "0.0.2",
+    "gulp-main-bower-files": "^1.6.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-twig": "^1.1.1",
+    "path": "^0.12.7",
+    "sass": "^1.0.0-beta.2"
+  }
+}

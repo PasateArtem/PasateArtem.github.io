@@ -1,0 +1,83 @@
+.card-example{
+	position: relative;
+	top: 50px;
+	.card-title{
+		text-align: left;
+		h2{
+			font-family: 'Conv_Roboto-Light';
+    	    font-size: 32px;
+    	    color: #0f5f5c;
+		}
+	}
+	.card-description{
+		text-align: left;
+		p{
+			font-family: 'Conv_Roboto-Regular';
+    	    font-size: 15px;
+    	    color: #83a7a5;
+    	    line-height: 24px;
+		}
+		.list-description{
+	        padding: 0;
+	        .list-item{
+		        display: flex;
+		        align-items: center;
+		        i{
+			        padding: 5px;
+                    background: inherit;
+                    border-radius: 50%;
+                    border: 1px solid #83a7a5;
+                    color: #83a7a5;
+		        }
+		        p{
+		        	margin-left: 10px;
+		        }
+            }
+        }
+	}
+}
+
+@media screen and (max-width: 974px){
+	.card-example{
+		top: 0;
+		text-align: center;
+		.card-title{
+			text-align: center;
+		}
+		.list-description{
+			p{
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 470px){
+	.card-example{
+		.card-title{
+		    h2{
+    	        font-size: 30px;    
+		    }
+	    }
+	    .card-description{
+		    p{
+    	        font-size: 13px;
+    	        line-height: 17px;
+		    }
+		    .list-description{
+                p{
+                	text-align: left;
+                }     	
+            }
+	    }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card-slider{
+	    img{
+		    width: 320px;
+		    height: auto;
+	    }
+    }
+}

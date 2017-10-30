@@ -1,0 +1,28 @@
+.section-main{
+	background: url(../img/home-top.png) no-repeat;
+	background-size: 100%;
+}
+.wrappbg{
+	img{
+	    max-width: 100%;
+	    height: auto;
+	}
+}
+
+.main-images-bg{
+	background: url(../img/bg-top.png) no-repeat;
+	background-size: 100%;
+}
+
+@media screen and (max-width: 600px){
+	.main-images-bg{
+		background-size: 100% 80%;
+	}
+}
+
+@media screen and (max-width: 470px){
+	.section-main{
+		background-size: 100% 83%;
+	}
+	
+}

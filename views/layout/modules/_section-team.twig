@@ -1,0 +1,17 @@
+<div class="section section-team">
+	<div class="container">
+		<div class="team-about">
+			<div class="list list-card-team">
+				{% for item in CardTeam %}
+				<div class="list-item">
+					<div class="card card-team">
+						<div class="card-images"><img src="img/{{item.imgUrl}}" alt=""></div>
+						<div class="card-name"><strong>{{item.strong}}</strong></div>
+						<div class="card-title"><p>{{item.p}}</p></div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+@import "base/index";
+@import "layout/index";
+@import "vendors/index";
+
+
+.container{
+  width: 100%;
+  max-width: 1075px ;
+  margin: 0 auto;
+  padding:0 10px; 
+  box-sizing: border-box;
+  background: none;
+}
+.wrapper{
+	  max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+body {
+	line-height: 1;
+	font-size: 16px;
+  margin: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  resize: none;
+}
+ol, ul {
+  list-style: none;
+} 
+a{
+  text-decoration: none;
+}

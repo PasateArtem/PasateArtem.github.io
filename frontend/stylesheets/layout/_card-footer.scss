@@ -1,0 +1,83 @@
+.list-card-footer{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f7f8f5;
+    .footer-inner{
+       p{
+            font-family: 'Conv_Roboto-Regular';
+            font-size: 12px;
+            color: #83a7a5; 
+        }
+    }
+    .list-links{
+    	display: flex;
+    	.list-item{
+    		padding-right: 15px;
+    		.bg-twitter{
+    			background: #55acee;
+                padding: 10px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                width: 15px;
+                height: 15px;
+    		}
+    		.bg-facebook{
+    			background: #3b5998;
+                padding: 10px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                width: 15px;
+                height: 15px;
+    		}
+    		.bg-instagram{
+    			background: #3f729b;
+                padding: 10px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                width: 15px;
+                height: 15px;
+    		}
+    		.bg-dribbble{
+    			background: #ea4c89;
+                padding: 10px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                width: 15px;
+                height: 15px;
+    		}
+    		.bg-github-alt{
+    			background: #333333;
+                padding: 10px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                width: 15px;
+                height: 15px;
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 470px){
+    .list-card-footer{
+        flex-direction: column;
+        .list-links{
+            padding: 0;
+            margin: 0px;
+            .list-item{
+                padding-right: 0;
+                margin: 8px;
+            }
+        }
+    }
+}

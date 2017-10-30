@@ -1,0 +1,29 @@
+{
+	"CardComponents":[
+	    {  "iconUrl": "itop1.png", "strong": "Ionicons", "p": "Vivamus sagittis lacus vel augue laoreet rutrum<br> faucibus dolor auctor. Aenean eu leo quam.<br> Pellentesque ornare sem."},
+	    {  "iconUrl": "itop2.png", "strong": "Creative Design", "p": "Maecenas faucibus mollis interdum. Praesent<br> commodo cursus magna, vel scelerisque nisl<br> consectetur et." },
+	    {  "iconUrl": "itop3.png", "strong": "Photoshop and Sketch", "p": "Morbi leo risus, porta ac consectetur ac, vestibulum<br> at eros. Maecenas sed diam eget risus varius blandit<br> sit amet non magna."}
+	],
+	"CardAdvantage":[
+	    { "iconUrl": "ibot1.png", "strong": "Cross Browser Compatibility", "p": "Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta<br> gravida at eget metus."},
+	    { "iconUrl": "ibot2.png", "strong": "Creative Idea", "p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula<br> porta felis euismod semper."},
+	    { "iconUrl": "ibot3.png", "strong": "Pixel Perfect", "p": "nteger posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem<br> ipsum dolor sit amet, consectetur adipiscing elit."},
+	    { "iconUrl": "ibot4.png", "strong": "Free Forever and Ever", "p": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non<br> mi porta gravida at eget metus."}
+	],
+	"PlanPrice":[
+	    { "strong": "BASIC", "h1": "$199", "span": "/month", "p": "Justo Fringilla<br>Mollis Sit Nullam<br>Ultricies Purus Amet<br>Cras Inceptos", "a": "SELECT PLAN"},
+	    { "strong": "PLUS", "h1": "$399", "span": "/month", "p": "Justo Fringilla<br>Mollis Sit Nullam<br>Ultricies Purus Amet<br>Cras Inceptos", "a": "SELECT PLAN"},
+	    { "strong": "PREMIUM", "h1": "$699", "span": "/month", "p": "Justo Fringilla<br>Mollis Sit Nullam<br>Ultricies Purus Amet<br>Cras Inceptos", "a": "SELECT PLAN"}
+	],
+	"InstrumentList":[
+	    { "p": "Maecenas faucibus mollis interdum"},
+	    { "p": "Vestibulum id ligula porta felis euismod"},
+	    { "p": "Nulla vitae elit libero, a pharetra augue"},
+	    { "p": "Cras justo odio, dapibus ac facilisis"},
+	    { "p": "Duis mollis, est non commodo luctus"},
+	    { "p": "Curabitur blandit tempus porttitor"},
+	    { "p": "Fringilla Mattis"},
+	    { "p": "Integer posuere"},
+	    { "p": "Nullam quis risus eget urna mollis"}
+	]
+}

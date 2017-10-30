@@ -1,0 +1,121 @@
+.list-card-banner{
+	justify-content: space-between;
+    display: flex;
+    align-items: center;
+	box-sizing: border-box;
+	padding: 79px 0px;
+	.card-title{
+		h2{
+			font-family: 'Conv_Roboto-Light';
+	        font-size: 28px;
+	        color: #63918d;
+	        margin: 0;
+		}   
+	}
+	.card-description{
+		p{
+		    font-family: 'Conv_Roboto-Regular';
+            font-size: 15px;
+            color: #83a7a5;
+            margin: 0;
+            line-height: 24px;
+		}
+	}
+	.form-group-actions{
+		.button-download{
+		    border: 1px solid transparent;
+            padding: 12px 10px;
+            border-radius: 4px;
+            background: #6fb048;
+            a{
+        	    font-family: 'Conv_Montserrat-Regular';
+        	    font-size: 14px;
+        	    padding: 15px;
+        	    color: #fff;
+        	    outline: none;
+            }
+	    }
+	    .button-download:hover{
+		    border: 1px solid #6fb048;
+		    background: inherit;
+		    a{
+			    color: #6fb048;
+		    }
+	    }	
+	}
+}
+
+// team.twig
+.list-card-banner-green{
+	.card-title{
+		h2{
+	        color: #fff;
+		}   
+	}
+	.card-description{
+		p{
+            color: #fff;
+		}
+	}
+	.form-group-actions{
+		.button-download{
+		    border: 1px solid transparent;
+            padding: 12px 10px;
+            border-radius: 4px;
+            background: #49732f;
+            a{
+        	    font-family: 'Conv_Montserrat-Regular';
+        	    font-size: 14px;
+        	    padding: 15px;
+        	    color: #fff;
+        	    outline: none;
+            }
+	    }
+	    .button-download:hover{
+		    border: 1px solid #49732f;
+		    background: inherit;
+		    a{
+			    color: #49732f;
+		    }
+	    }	
+	}
+}
+
+@media screen and (max-width: 873px){
+	.list-card-banner{
+		flex-direction: column;
+        text-align: center;
+        padding: 30px 0px;
+        .list-item{
+        	padding: 15px 0px;
+        }
+	}
+}
+
+@media screen and (max-width: 470px){
+	.list-card-banner{
+		padding: 10px 0;
+		.list-item{
+        	padding: 10px 0px;
+        }
+		.card-title{
+			padding: 5px 0px;
+			h2{
+				font-size: 25px;
+			}	
+		}
+		.card-description{
+			p{
+				line-height: 17px;
+				font-size: 13px;
+			}
+		}
+		.form-group-actions{
+			.button-download{
+				a{
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}

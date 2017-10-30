@@ -1,0 +1,107 @@
+.list-card-pricing{
+	display: flex;
+    justify-content: center;
+    width: 670px;
+    margin: 0 auto;
+    border: 1px solid #c1d3d2;
+    border-radius: 5px;
+    .list-item{
+    	padding: 25px;
+    	width: 200px;
+    }
+    .list-item:nth-child(even){
+        border: 1px solid #c1d3d2;
+        border-top: none;
+        border-bottom: none;
+        .active-select{
+		    background: #6fb048;
+	    }
+	    .active-select:hover{
+		    border: 1px solid #6fb048;
+		    background: inherit;
+		    a{
+			    color: #6fb048;
+		    }
+	    }
+    }
+}
+.card-price{
+	.card-title{
+		padding-bottom: 15px;
+		strong{
+			font-family: 'Conv_Roboto-Medium';
+			font-size: 15px;
+			color: #6fb048;
+		}
+	}
+	.card-numeral{
+		padding-bottom: 15px;
+		h1{
+			font-family: 'Conv_Montserrat-Regular';
+			font-size: 65px;
+			color: #0f5f5c;
+			margin: 15px 0px 0px;
+		}
+		span{
+			font-family: 'Conv_Roboto-Regular';
+			font-size: 14px;
+			color: #0f5f5c;
+		}
+	}
+	.card-description{
+		p{
+			font-family: 'Conv_Roboto-Regular';
+			font-size: 14px;
+			color: #83a7a5;
+			line-height: 24px;
+		}
+	}
+	.form-group-actions{
+		.button-select{
+		    border: 1px solid transparent;
+            padding: 12px 10px;
+            border-radius: 4px;
+            background: #83a7a5;
+            a{
+        	    font-family: 'Conv_Montserrat-Regular';
+        	    font-size: 14px;
+        	    padding: 15px;
+        	    color: #fff;
+        	    outline: none;
+            }
+	    }
+	    .button-select:hover{
+		    border: 1px solid #6fb048;
+		    background: inherit;
+		    a{
+			    color: #6fb048;
+		    }
+	    }	
+	}
+}
+
+// pricing.twig
+
+.list-card-pricing-light{
+	background: none;
+	.list-item{
+		background: #fff;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.list-card-pricing{
+		width: 100%;
+		border: none;
+		flex-flow: row wrap;
+		.list-item{
+			width: 200px;
+    	    padding: 25px;
+    	    margin: 15px;
+    	    border: 1px solid #c1d3d2;
+        }
+        .list-item:nth-child(even){
+        	border: 1px solid #c1d3d2;
+        }
+	}
+}

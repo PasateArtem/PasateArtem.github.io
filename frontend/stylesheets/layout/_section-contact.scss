@@ -1,0 +1,181 @@
+.section-contact{
+    padding: 0px 0px 30px;
+}
+.card-map{
+    padding-bottom: 20px;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+.contact-about{
+	text-align: center;
+}
+.list-card-contact{
+	display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.panel-form-contact{
+	width: 510px;
+	.form-group-input{	
+        display: flex;
+        flex-direction: column;
+        .form-control{
+        	padding: 10px;
+            margin-bottom: 15px;
+            width: 92%;
+            border: 1px solid #c1d3d2;
+        }
+        input::-webkit-input-placeholder{
+    		opacity: 1;
+    		transition: opacity 0.3s ease;
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+    	}
+        input::-moz-input-placeholder{
+        	opacity: 1;
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+        }
+        input:-moz-input-placeholder{
+        	opacity: 1; 
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+        }
+        input:-ms-input-placeholder{
+        	opacity: 1; 
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+        }
+        input:focus::-webkit-input-placeholder {
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        input:focus::-moz-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        input:focus:-moz-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        input:focus:-ms-input-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+    }
+    .form-group-textarea{
+    	text-align: left;
+        	textarea{
+        	    width: 92%;
+                height: auto;
+                padding: 10px;
+                border: 1px solid #c1d3d2;
+            }
+           textarea::-webkit-input-placeholder{
+    		opacity: 1;
+    		transition: opacity 0.3s ease;
+    		font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+    	}
+       textarea::-moz-input-placeholder{
+        	opacity: 1;
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+        }
+        textarea:-moz-input-placeholder{
+        	opacity: 1; 
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+        }
+        textarea:-ms-input-placeholder{
+        	opacity: 1; 
+        	transition: opacity 0.3s ease;
+        	font-family: 'Conv_Roboto-Regular';
+    		font-size: 14px;
+    		color: #83a7a5;
+        }
+        textarea:focus::-webkit-input-placeholder {
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        textarea:focus::-moz-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        textarea:focus:-moz-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+        textarea:focus:-ms-input-placeholder{
+        	opacity: 0; 
+        	transition: opacity 0.3s ease;
+        }
+    }
+    .form-group-actions{
+    	text-align: left;
+        padding-top: 15px;
+    	.button-send{
+		    border: 1px solid transparent;
+            padding: 12px 10px;
+            border-radius: 4px;
+            background: #6fb048;
+            a{
+        	    font-family: 'Conv_Montserrat-Regular';
+        	    font-size: 14px;
+        	    padding: 15px;
+        	    color: #fff;
+        	    outline: none;
+            }
+	    }
+	    .button-send:hover{
+		    border: 1px solid #6fb048;
+		    background: inherit;
+		    a{
+			    color: #6fb048;
+		    }
+	    }	
+    }
+}
+
+@media screen and (max-width: 873px){
+    .list-card-contact{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 510px){
+    
+    .panel-form-contact{
+        width: 470px;
+    }
+}
+@media screen and (max-width: 470px){
+    .panel-form-contact{
+        width: 375px;
+    }
+    // .list-card-contact{
+    //     align-items: center;
+    // }
+}
+@media screen and (max-width: 375px){
+    .panel-form-contact{
+        width: 300px;
+    }
+    // .list-card-contact{
+    //     align-items: center;
+    // }
+}

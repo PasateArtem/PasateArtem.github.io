@@ -1,0 +1,14 @@
+.slider-example{
+	max-width: 179px;
+	position: absolute;
+	top: 50px;
+    right: 80px;
+}
+
+@media screen and (max-width: 375px){
+	.slider-example{
+		top: 40px;
+        right: 58px;
+        max-width: 136px;
+	}
+}
