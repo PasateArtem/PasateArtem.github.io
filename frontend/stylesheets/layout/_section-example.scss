@@ -10,6 +10,9 @@
     .list-item{
     	position: relative;
     	max-width: 526px;
+        .card-slider{
+            margin-bottom: -2px;
+        }
     }    
 }
 @media screen and (max-width: 974px){
