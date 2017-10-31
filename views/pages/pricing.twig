@@ -48,11 +48,11 @@
 				        	{% for item in PlanPrice %}
 				            <div class="list-item ">
 				            	<div class="card card-price">
-				            		<div class="card-title"><strong>{{item.strong}}</strong></div>
-				            		<div class="card-numeral"><h1>{{item.h1}}</h1><span>{{item.span}}</span></div>
-                                    <div class="card-description"><p>{{item.p}}</p></div>
+				            		<div class="card-title"><strong>{{item.title}}</strong></div>
+				            		<div class="card-numeral"><h1>{{item.numeral}}</h1><span>{{item.text}}</span></div>
+                                    <div class="card-description"><p>{{item.description}}</p></div>
                                     <div class="form-group-actions">
-		    	                        <button class="button button-select active-select"><a href="#">{{item.a}}</a></button>
+		    	                        <button class="button button-select active-select"><a href="#">{{item.select}}</a></button>
 		                            </div>
 				            	</div>
 				            </div>
@@ -76,7 +76,7 @@
 				    <div class="card-instrument">
 				        <ul class="list-description">
 				        	{% for item in InstrumentList %}
-				        	<li class="list-item"><i class="fa fa-check" aria-hidden="true"></i><p>{{item.p}}</p></li>
+				        	<li class="list-item"><i class="fa fa-check" aria-hidden="true"></i><p>{{item.description}}</p></li>
 				        	{% endfor %}
 				        </ul>
 				    </div>
