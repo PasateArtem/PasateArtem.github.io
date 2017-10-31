@@ -97,6 +97,10 @@
                     border: none;
                     color: #6fb048;
                     background: inherit;
+                    outline: none;
+                }
+                a:focus{
+                    outline: none;
                 }
                 .is-active-link{
                     border-radius: 0;
