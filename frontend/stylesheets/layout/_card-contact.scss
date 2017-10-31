@@ -4,6 +4,7 @@
 	text-align: left;
 	width: 260px;
 	margin-left: -150px;
+	transition: border-color 2s ease;
 	.card-title{
 		strong{
 			font-family: 'Conv_Roboto-Light';
@@ -34,7 +35,9 @@
         }
 	}
 }
-
+.card-contact:hover{
+	border-color: #6fb048;
+}
 @media screen and (max-width: 1024px){
     .card-contact{
     	margin-left: 0;

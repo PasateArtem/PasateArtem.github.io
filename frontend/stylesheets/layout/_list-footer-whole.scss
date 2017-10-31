@@ -75,9 +75,14 @@
     		color: #83a7a5;
     		outline: none;
     		width: 85%;
+            -webkit-transition: border-color 1.5s ease;
+            -moz-transition: border-color 1.5s ease;
+            -o-transition: border-color 1.5s ease;
+            -ms-transition: border-color 1.5s ease;
+            transition: border-color 1.5s ease;
     	}
     	.form-control:hover{
-            border: 1px solid #6fb048;
+            border-color: #6fb048;
     	}
     	button{
     		position: relative;

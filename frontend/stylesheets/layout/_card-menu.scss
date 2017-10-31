@@ -15,11 +15,19 @@
 			border-radius: 4px;
 			background: #6a7f7f;
 			color: #fff;
+            transition: all 1s ease;
 		}
         .is-active-link{
             border-radius: 4px;
             background: #6a7f7f;
             color: #fff;
+            border: 1px solid transparent;
+        }
+        .is-active-link:hover{
+            border: 1px solid #6a7f7f;
+            background: inherit;
+            color: #6a7f7f;
+            transition: all 1s ease;
         }
 	}
 }
@@ -35,11 +43,19 @@
 		}
 		a:hover{
 			background: #6fb048;
+            transition: all 1s ease;
 		}
         .is-active-link{
             border-radius: 4px;
             background: #6fb048;
             color: #fff;
+            border: 1px solid transparent;
+        }
+        .is-active-link:hover{
+            border: 1px solid #6fb048;
+            background: inherit;
+            color: #6fb048;
+            transition: all 1s ease;
         }
 	}
 }
@@ -74,6 +90,8 @@
                     padding-bottom: 0;
                     text-decoration: none;
                     color: #cbcfcf;
+                    padding: 0;
+                    display: block;
                 }
                 a:hover{
                     border: none;

@@ -26,6 +26,17 @@
             margin-bottom: 15px;
             width: 92%;
             border: 1px solid #c1d3d2;
+            -webkit-transition: border-color 1.5s ease;
+            -moz-transition: border-color 1.5s ease;
+            -o-transition: border-color 1.5s ease;
+            -ms-transition: border-color 1.5s ease;
+            transition: border-color 1.5s ease;   
+        }
+        .form-control:hover{
+            border-color: #6fb048;
+        }
+        .form-control:focus{
+            border-color: #6fb048;
         }
         input::-webkit-input-placeholder{
     		opacity: 1;
@@ -79,6 +90,17 @@
                 height: auto;
                 padding: 10px;
                 border: 1px solid #c1d3d2;
+                -webkit-transition: border-color 1.5s ease;
+                -moz-transition: border-color 1.5s ease;
+                -o-transition: border-color 1.5s ease;
+                -ms-transition: border-color 1.5s ease;
+                transition: border-color 1.5s ease;
+            }
+            textarea:hover{
+                border-color: #6fb048;
+            }
+            textarea:focus{
+                border-color: #6fb048;
             }
            textarea::-webkit-input-placeholder{
     		opacity: 1;
